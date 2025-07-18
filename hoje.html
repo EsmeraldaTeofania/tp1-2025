@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculadora de regra de 3 </h1>
+    <input type="number" name="a" id ="a">
+    <input type="number" name="b" id ="b"> 
+    <input type="number" name="c" id ="c">
+    x <br>
+    <input type="button" name="botao" id = "botao" value="regrade3" onclick="regrade3()">
+    <p id = "resultado"></p>
+    <script>
+        function regrade3(){
+            resultado = document.getElementById('resultado')
+            a=parseFloat(document.getElementById('a').value)
+            b=parseFloat(document.getElementById('b').value)
+            c=parseFloat(document.getElementById('c').value)
+            x=b*c/a
+            resultado.textContent= `x=${x}`
+        }
+    </script>
+</body>
+</html>
