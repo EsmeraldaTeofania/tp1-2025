@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="mensagem">bom dia</label>
+    <input type="text" id= "ola">
+    <input type="button" value="mostrar mensagem" onclick="mostrarmensagem()">
+    <p id = "oi"> </p>
+    <script>
+        
+        function mostrarmensagem(){
+            texto = document.getElementById('ola').value
+            mensagem = document.getElementById('oi')
+
+            mensagem.innerHTML=texto
+        }
+    </script>
+</body>
+</html>
